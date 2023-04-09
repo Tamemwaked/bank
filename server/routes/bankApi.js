@@ -37,16 +37,4 @@ router.get("/transactions/categories", async (req, res) => {
   }
 });
 
-router.get("/balance", async (req, res) => {
-  try {
-    const balance = await Transaction.aggregate([
-      { $group: { _id: null, total: { $sum: "$amount" } } },
-    ]);
-    res.send({ balance: balance[0].total });
-  } catch (error) {
-    console.error(error);
-    res.status(500).send("error");
-  }
-});
-
 module.exports = router;
