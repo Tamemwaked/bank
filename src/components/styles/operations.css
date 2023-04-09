@@ -1,0 +1,70 @@
+.operations-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2rem auto;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
+  background-color: #f9f9f9;
+  max-width: 600px;
+}
+
+.operations-container h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.operations-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 400px;
+}
+
+.operations-container label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  text-align: left;
+}
+
+.operations-container input {
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: none;
+  box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.2);
+  font-size: 1.2rem;
+  width: 100%;
+  max-width: 300px;
+  margin-top: 0.5rem;
+}
+
+.operations-container .button-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 400px;
+  margin-top: 1rem;
+}
+
+.operations-container .button-container button {
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
+  border: none;
+  box-shadow: 0 0.1rem 0.3rem rgba(0, 0, 0, 0.2);
+  font-size: 1.2rem;
+  color: #fff;
+  cursor: pointer;
+  width: calc(50% - 0.5rem);
+}
+
+.operations-container .button-container .withdraw {
+  background-color: #ff3d00;
+}
+
+.operations-container .button-container .deposit {
+  background-color: #4caf50;
+}
